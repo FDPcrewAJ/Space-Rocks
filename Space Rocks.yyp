@@ -2,7 +2,15 @@
   "resourceType": "GMProject",
   "resourceVersion": "1.6",
   "name": "Space Rocks",
-  "resources": [],
+  "resources": [
+    {"id":{"name":"spr_asteroid_medium","path":"sprites/spr_asteroid_medium/spr_asteroid_medium.yy",},"order":2,},
+    {"id":{"name":"obj_ship","path":"objects/obj_ship/obj_ship.yy",},"order":0,},
+    {"id":{"name":"obj_asteroid","path":"objects/obj_asteroid/obj_asteroid.yy",},"order":1,},
+    {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":0,},
+    {"id":{"name":"spr_asteroid_large","path":"sprites/spr_asteroid_large/spr_asteroid_large.yy",},"order":3,},
+    {"id":{"name":"spr_asteroid_small","path":"sprites/spr_asteroid_small/spr_asteroid_small.yy",},"order":1,},
+    {"id":{"name":"spr_ship","path":"sprites/spr_ship/spr_ship.yy",},"order":0,},
+  ],
   "Options": [
     {"name":"HTML5","path":"options/html5/options_html5.yy",},
     {"name":"Linux","path":"options/linux/options_linux.yy",},
@@ -17,7 +25,9 @@
     "name": "Default",
     "children": [],
   },
-  "RoomOrderNodes": [],
+  "RoomOrderNodes": [
+    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+  ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Extensions","folderPath":"folders/Extensions.yy","order":14,},
