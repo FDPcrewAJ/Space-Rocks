@@ -1,6 +1,10 @@
 /// @desc Bullet with asteroid collision
+// Score Counting
+score += 10;
+
 instance_destroy();
 
+//What asteroid is being destroyed? Properly split or destoy based on that
 with(other) {
 	instance_destroy();
 	
