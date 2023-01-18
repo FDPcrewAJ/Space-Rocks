@@ -42,11 +42,10 @@ switch(room) {
 		draw_set_halign(fa_center);
 		var c = c_red
 		draw_text_transformed_color(
-			room_width/2, 150, "GAME OVER");
+			room_width/2, 150, "GAME OVER",
 			3, 3, 0, c, c, c, c, 1
 		);
 		draw_text(room_width/2, 250, "Final Score: "+string(score));
-		draw_set_halign(fa_left);
 		draw_text(room_width/2, 300, "Press ENTER To Restart");
 		draw_set_halign(fa_left);
 		break;
