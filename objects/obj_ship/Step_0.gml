@@ -18,4 +18,5 @@ if (keyboard_check_pressed(vk_space)) {
 	var y_adj = -sin(degtorad(image_angle)) * sprite_width/2;
 	var inst= instance_create_layer(x + x_adj, y + y_adj, "Instances", obj_bullet);
 	inst.direction = image_angle;
+	audio_play_sound(snd_shoot, 1, false);
 }

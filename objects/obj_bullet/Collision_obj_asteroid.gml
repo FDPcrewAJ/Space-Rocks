@@ -2,6 +2,8 @@
 // Score Counting
 score += 10;
 
+audio_play_sound(snd_die, 1, false);
+
 instance_destroy();
 
 //What asteroid is being destroyed? Properly split or destoy based on that
