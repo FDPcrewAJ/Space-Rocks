@@ -18,21 +18,22 @@ switch(room) {
 	
 	case rm_start:
 		draw_set_halign(fa_center);
-		var c = c_yellow
 		draw_text_transformed_color(
 			room_width/2, 100, "SPACE ROCKS",
-			3, 3, 0, c, c, c, c, 1
+			3, 3, 0, #B23929, #99623D, #327A7F, #99623D, 1
 		);
-		draw_text(room_width/2, 200, string(game_instructions));
+		draw_text_transformed_color(
+		room_width/2, 200, string(game_instructions),
+		1, 1, 0, #EF9C16, #EF1520, #EF9C16, #EFE417, 1
+		);
 		draw_set_halign(fa_left);
 		break;
 		
 	case rm_win:
 		draw_set_halign(fa_center);
-		var c = c_lime;
 		draw_text_transformed_color(
 			room_width/2, 200, "YOU WIN!",
-			3, 3, 0, c, c, c, c, 1
+			3, 3, 0, c_green, c_green, #327A7F, #327A7F, 1
 		);
 		draw_text(room_width/2, 300, "Press ENTER To Restart");
 		draw_set_halign(fa_left);
@@ -40,10 +41,9 @@ switch(room) {
 	
 	case rm_gameover:
 		draw_set_halign(fa_center);
-		var c = c_red
 		draw_text_transformed_color(
 			room_width/2, 150, "GAME OVER",
-			3, 3, 0, c, c, c, c, 1
+			3, 3, 0, #EF1520, #EF1520, #EFE417, #EFE417, 1
 		);
 		draw_text(room_width/2, 250, "Final Score: "+string(score));
 		draw_text(room_width/2, 300, "Press ENTER To Restart");

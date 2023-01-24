@@ -1,15 +1,24 @@
 /// @desc Ship Movement
 
 // Basic Movement
+image_speed = 1;
+
 if (keyboard_check(vk_left)) {
+	sprite_index = spr_ship_left;
 	image_angle = image_angle + 5;
 }
-if (keyboard_check(vk_right)) {
+else if (keyboard_check(vk_right)) {
+	sprite_index = spr_ship_right;
 	image_angle = image_angle - 5;
 }
-if (keyboard_check(vk_up)) {
+else if (keyboard_check(vk_up)) {
 	motion_add(image_angle, 0.05);
+	sprite_index = spr_ship_forward;
 }
+else {
+	sprite_index = spr_ship_still;	
+}
+
 move_wrap(true,true,sprite_width/2);
 
 // Bullet Shooting
