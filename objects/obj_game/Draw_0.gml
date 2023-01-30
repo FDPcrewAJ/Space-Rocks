@@ -19,7 +19,7 @@ switch(room) {
 	case rm_start:
 		draw_set_halign(fa_center);
 		draw_text_transformed_color(
-			room_width/2, 100, "SPACE ROCKS",
+			room_width/2, 100, "SPACE ROCKERS!",
 			3, 3, 0, #B23929, #99623D, #327A7F, #99623D, 1
 		);
 		draw_text_transformed_color(
