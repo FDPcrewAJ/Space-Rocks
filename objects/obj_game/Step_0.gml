@@ -1,4 +1,4 @@
-/// @desc
+/// @desc Room Switching
 
 if(keyboard_check_pressed(vk_enter)) {
 	switch(room) {

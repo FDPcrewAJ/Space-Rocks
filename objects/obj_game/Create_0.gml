@@ -1,4 +1,4 @@
-/// @desc
+/// @desc Key Variables
 
 score = 0;
 lives = 3;

@@ -1,4 +1,4 @@
-/// @desc
+/// @desc destroy asteroid
 
 lives -= 1;
 

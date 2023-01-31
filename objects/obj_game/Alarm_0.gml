@@ -1,4 +1,4 @@
-/// @desc
+/// @desc asteroid spawning
 if(room != rm_game){
 	exit;
 }

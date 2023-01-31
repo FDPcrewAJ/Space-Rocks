@@ -1,4 +1,4 @@
-/// @desc
+/// @desc text for screens
 
 var game_instructions = 
 @"Score 1,000 points to win!
